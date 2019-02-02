@@ -1,0 +1,73 @@
+body{
+	background-color: black;
+	margin: 0;
+}
+h1{
+	font-family: Bangers;
+	color: white;
+	text-align: center;
+	font-size: 59px;
+}
+.square{
+	width: 30%;
+	background-color: green;
+	padding-bottom: 30%;
+float: left;
+	margin: 1.66%;
+	border-radius: 25%;
+	transition: all 0.7s;
+	-webkit-transition:all 0.7s;
+	-moz-transition: all 0.7s;
+}
+#container{
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+span{
+	color: white;
+	text-align: center;
+}
+ #stripe{
+	text-align: center;
+ }
+  #message{
+	  font-family: Bangers;
+		font-size: 19px;
+  }
+  #stripe2{
+	font-family: Bangers;
+	font-size: 19px;
+	background: rbg(123, 65, 45);
+	text-align: center;
+  }
+  .selected{
+	  background :rgb(100,100,200);
+  }
+  #easybtn{
+	font-family: Bangers;
+	font-size: 19px;
+  }
+  #hardbtn{
+	font-family: Bangers;
+	font-size: 19px;
+  }
+  #stripe{
+	  background: rgba(255,255,255,0.51);
+	}
+	p{
+		font-family: Bangers;
+	font-size: 49px;
+	}
+	button{
+		border: none;
+		background: none;
+		height:100%;
+		letter-spacing: 1px;
+		color: azure; 
+		transition: all 0.4s;
+	}
+	button:hover{
+		color: azure;
+		background: rgb(100,100,200);
+	}
