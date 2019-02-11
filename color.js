@@ -10,6 +10,7 @@ var easybtn=document.querySelector("#easybtn");
 var hardbtn=document.querySelector("#hardbtn");
 var se=document.querySelector("#se");
 var count=0;
+var flag=0;
 easybtn.addEventListener("click", function() 
 {
 	easybtn.classList.add("selected");
@@ -45,6 +46,7 @@ hardbtn.addEventListener("click", function() {
 
 stripe2.addEventListener("click",reset);
 function reset() {
+	flag=0;
 colors=generaterandomcolors(numberofsquares);
 pickedcolor = pickColor();
 colordisplay.textContent = pickedcolor;
@@ -66,8 +68,9 @@ for(var i=0; i< squares.length; i++)
 	{
 		var clickedcolor =  this.style.background;
 		console.log(clickedcolor,pickedcolor);
-		if(clickedcolor === pickedcolor)
+		if(clickedcolor === pickedcolor&&flag===0)
 		{
+			flag=1;
 			messagedisplay.textContent="CORRECT";
 			changecolors(clickedcolor);
 			h1.style.background=clickedcolor;
